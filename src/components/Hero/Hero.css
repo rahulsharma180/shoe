@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     align-items: center;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 100px);
 }
 
 .hero-content {
@@ -22,14 +22,24 @@
     max-width: 400px;
 }
 
+
 .hero-btn {
     display: flex;
     gap: 40px;
 }
 
-.hero-btn button {
+.primary-btn {
     font-size: 24px;
+    padding: 6px 16px;
+    background-color: var(--red);
+    color: white;
+    font-weight: 500;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+ 
 }
+
 
 
 
@@ -37,14 +47,166 @@
     background: transparent;
     color: var(--gray);
     border: 1px solid gray;
+    padding: 6px 16px;
+     font-weight: 500;
+     font-size: 24px;
+
 }
+
 
 .shopping p {
     font-size: 14px;
     margin-bottom: 8px;
+    
 }
 
 .brand-icons {
     display: flex;
     gap: 16px;
 }
+
+/* ✅ Mobile Responsive (Screens below 1080px) */
+@media (max-width: 1080px) {
+   
+    .hero {
+        display: flex;
+        margin: auto;
+        /* border: 1px solid red; */
+         justify-content: center;
+         gap: 40px;
+    }
+    .hero-content{
+        margin-left: 50px;
+        width: 600px;
+        /* border: 1px solid red; */
+       
+    }
+    .hero h1 {
+        font-size: 50px; /* Reduce heading size */
+        line-height: 1.2;
+    }
+    .hero-image img{
+         width: 400px;
+    }
+
+    .hero p {
+        font-size: 16px;
+       }
+
+    .hero-btn {
+         gap: 10px; /* Reduce gap on small screens */
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        font-size: 18px;
+        padding: 8px 5px;
+        min-width: 30%; /* Full width on small screens */
+    }
+    .shopping{
+         /* border: 1px solid green; */
+         width: 50%;
+         
+    }
+    .brand-icons {
+        display: flex;
+        width: 50%;
+        /* border: 1px solid green; */
+        padding: auto;
+        gap: 10px;
+    }
+    .brand-icons img{
+      margin:    auto  ;
+     }
+}
+ 
+ /* ✅ Mobile Responsive (Screens below 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        height: auto; /* Allow height to adjust dynamically */
+        padding-top: 20px;
+    }
+
+    .hero-content{
+        margin: auto;
+        width: 600px;
+        border: 1px solid red;
+       
+    }
+    .hero-image img{
+        margin-left: 20px;
+        border: 1px solid red;
+   }
+    .hero h1 {
+        font-size: 38px; /* Reduce heading size */
+        line-height: 1.2;
+        text-align: center;
+
+    }
+
+    .hero p {
+        font-size: 16px;
+        max-width: 500px;
+        text-align: center;
+        margin: auto;
+     }
+
+    .hero-btn {
+         gap: 12px; /* Reduce gap on small screens */
+         margin: auto;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    
+    }
+    .shopping{
+        border: 1px solid green;
+        margin: auto;        
+   }
+   .brand-icons {
+       display: flex;
+       /* width: 50%; */
+       border: 1px solid green;
+       margin: auto;
+       padding: auto;
+       gap: 10px;
+   }
+   .brand-icons img{
+     margin:    auto  ;
+    }
+}
+
+/* ✅ Extra Small Screens (Below 480px) */
+    @media (max-width: 480px) {
+        
+        .hero h1 {
+            font-size: 25px;
+        }
+
+        .hero-content{
+            margin: auto;
+            width: 100%;
+            border: 1px solid rgb(0, 255, 213);
+           
+        }
+        .hero-image img{
+            margin: auto;
+            width: 80%;
+            margin-left: 40px;
+            border: 1px solid red;
+       }
+        .hero p {
+            font-size: 14px;
+            max-width: 250px;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+    }

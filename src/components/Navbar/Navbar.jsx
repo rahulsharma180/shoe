@@ -17,7 +17,9 @@ function Navbar() {
           
         
 
-            <button>Login</button>
+          <div className="nav-actions">
+        <button className="login-btn">Login</button>
+          </div>
 
       </nav>
     </div>
