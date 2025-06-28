@@ -50,17 +50,19 @@
 
 .prodSec{
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
     /* border: 1px solid red; */
     width: 100%;
+     
 
  
 }
 .prod{
     display: flex;
-     width: 90%;
-    height: 500px;
+    width: 90%;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
      /* border: 1px solid red; */
 }
 .prodItem{
