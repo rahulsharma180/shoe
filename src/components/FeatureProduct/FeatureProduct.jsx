@@ -8,7 +8,7 @@ function FeatureProduct() {
           <div className="sneakerTitle">SNEAKER</div>
           <div className="featureTitle">
             <h3>featured</h3>
-            <p>Product</p>
+            <p>Products</p>
           </div>
         </div>
 
@@ -76,6 +76,15 @@ function FeatureProduct() {
             </div>
           </div>
         </div>
+
+         <div className="productTitle">
+          <div className="sneakerTitle">Product</div>
+          <div className="featureTitle">
+            <h3>best seller</h3>
+            <p>Products</p>
+          </div>
+        </div>
+
       </div>
     </>
   );
