@@ -1,6 +1,6 @@
 import React from 'react';
 import './FeatureProduct.css';
-import ProductItem from '../productItem/ProductItem';
+import ProductItem from '../ProductItem/ProductItem.jsx';
 function FeatureProduct() {
   return (
     <>

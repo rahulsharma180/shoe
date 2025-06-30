@@ -1,6 +1,6 @@
 import React from 'react'
 import './BestProduct.css';
-import ProductItem from '../productItem/ProductItem';
+import ProductItem from '../ProductItem/ProductItem';
 function BestProduct() {
   return (
     <div className='bestproduct'>
