@@ -1,27 +1,33 @@
-import React from 'react';
-import './FeatureProduct.css';
+import React from 'react'
+import './BestProduct.css';
 import ProductItem from '../productItem/ProductItem';
-function FeatureProduct() {
+function BestProduct() {
   return (
-    <>
-      <div className="featureProduct">
-        <div className="productTitle">
-          <div className="sneakerTitle">SNEAKER</div>
-          <div className="featureTitle">
-            <h3>featured</h3>
-            <p>Products</p>
-          </div>
-        </div>
-
-        <div className="prodSec">
-          <div className="prod">
-            <ProductItem
+    <div className='bestproduct'>
+        <div className="best">
+        <div className="right">   <ProductItem
+              url={
+                'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19998832/2022/9/16/e2085dc0-e624-4644-b574-0e9cac3b0c351663338634736RoadsterMensRedFauxLeatherCasualLaceUpSneakers1.jpg'
+              }
+              name={'White Sneaker'}
+              price={'₹ 6999'}
+              rating={'5'}
+            /></div>
+        <div className="left"> 
+           <ProductItem
               url={
                 'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/19974108/2022/9/16/3c53a739-70fe-4efd-b5f1-721179b9a9371663274343146RoadsterMensWhiteFauxLeatherFormalLaceUpSneakers1.jpg'
               }
               name={'White Sneaker'}
               price={'₹ 7999'}
               rating={'4'}
+            /><ProductItem
+              url={
+                'https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2024/JULY/29/6xDjrKNT_1c000df180b841b690cd7ac98984e554.jpg'
+              }
+              name={'White Sneaker'}
+              price={'₹ 9999'}
+              rating={'5'}
             />
             <ProductItem
               url={
@@ -29,7 +35,7 @@ function FeatureProduct() {
               }
               name={'White Sneaker'}
               price={'₹ 6999'}
-              rating={'5'}
+              rating={'4'}
             />
             <ProductItem
               url={
@@ -47,19 +53,22 @@ function FeatureProduct() {
               price={'₹ 5999'}
               rating={'2'}
             />
-          </div>
+            
+            <ProductItem
+              url={
+                'https://assets.myntassets.com/h_580,q_90,w_500/v1/assets/images/29859283/2024/5/31/82f9513f-cd1e-484a-84c9-4b9041ce49fe1717131785185ASIANMenColourblockedSneakers1.jpg '
+              }
+              name={'White Sneaker'}
+              price={'₹ 7999'}
+              rating={'5'}
+            />
+            
+            </div>
         </div>
 
-        <div className="productTitle">
-          <div className="sneakerTitle">Product</div>
-          <div className="featureTitle">
-            <h3>best seller</h3>
-            <p>Products</p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+
+    </div>
+  )
 }
 
-export default FeatureProduct;
+export default BestProduct
