@@ -62,7 +62,7 @@
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 20px;
      /* border: 1px solid red; */
     justify-content: center;
 }
